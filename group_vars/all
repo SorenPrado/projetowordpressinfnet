@@ -1,0 +1,17 @@
+aws_access_key: "AKIAIABMFYKP67PLMPHQ"
+aws_secret_key: "clbpqSLNRHOR090………………….."
+
+application: "wordpress" 
+target_env: "prod"
+aws_region: "us-east-1"
+aws_region_short: "ue1"
+aws_region_az: "c"
+vpc_name: "vpc-{{ aws_region_short }}-{{ target_env }}-{{ application }}"
+vpc_cidr_block: "172.27.0.0/16"
+public_subnet_1_cidr: "172.27.0.0/18"
+public_subnet_2_cidr: "172.27.64.0/18"
+private_subnet_1_cidr: "172.27.128.0/18"
+private_subnet_2_cidr: "172.27.192.0/18"
+keypair_name: "key_pair_infnet"
+
+ssh_pubkey: 'ssh-rsa MIIEowIBAAKCAQEAoyl6zv9Cj9HWtZShENRQXpvqnmdUlp3DoGz0tLt9Njvdm/RYsCHVHb6AR7oSiS/bUIA7okc61bXZL8wRpYf+X24MTJ6VbHQEWAsrgmJvjhXRzvGv0rPUIyRcmfwjikjDcpUCI8T1d/nuZa4bs9caeWlukKeKvcjKqUVptOG9Hz/oeK39vf2E6vI2SHumqiDYVOK85NQzMne0H24BAivzGlg4B5F1fmLKHEJ/+UzZxSyIGd+3ofeFSnz5D3FWSCD+1J7E3k+p96Dk51vZw0gZ3RZXmkhCFc5lLrjszsG47sPd30tfJcIqvUSuRZM65UFPuK9zdVwhJnuwCX9Qx3tmbQIDAQABAoIBACROW5Rp+m60O7ml+/0ZsVSMDzX2Oj1Vl60/8Wex/Jev1I0aXw26SYjX1gWf4vYB3yRXlG10uiPJ1i0rlJWn4DNt8nCuLQO4AStyONlHfBk6w7fv0bbp6v9y3OQq1eG0dUEu5Q3+iryKscCQcHuhFrQDgOXRUi8O2gG2f2IPhRzJqabViGBikRqglf1r2N+mYw………………………………………………………. sorenprado@ubuntu'
